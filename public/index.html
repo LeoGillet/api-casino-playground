@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Casino</title>
+        <style>
+            body {
+              font-family: sans-serif;
+              text-align: center;
+              margin: 50px;
+            }
+            button {
+              padding: 10px 20px;
+              font-size: 20px;
+              margin: 10px;
+              cursor: pointer;
+            }
+          </style>
+    </head>
+    <body>
+      <h1>Welcome to the Casino API Playground</h1>
+      <p>Register to get your token: <a href="/register" target="_blank">Click Here</a></p>
+      <p>Use the token to make API requests to:</p>
+      <pre>
+        GET /balance?token=your_token_here
+        POST /bet (body: { "token": "your_token", "amount": 10 })
+      </pre>
+    </body>
+</html>
